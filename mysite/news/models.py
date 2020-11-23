@@ -15,7 +15,7 @@ class Student(models.Model):
 class Homework(models.Model):
     commit_date = models.DateField()
     headline = models.CharField(max_length=200)
-    attach = models.FielField()
+    attach = models.FileField()
     remark = models.TextField()
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
 
